@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        
+    <title>aZaracho</title>
+</head>
+<body>
+    
+<header>
+    <nav>
+        <ul class="menu-principal">
+            <li> <a href="#Inicio"> Inicio </a> </li>
+            <li> <a href="#Sobre mi"> Sobre mi </a> </li>
+            <li> <a href="#Habilidades"> Habilidades </a> </li>
+            <li> <a href="#Proyectos"> Proyectos </a> </li>
+            <li> <a href="#Educacion"> Educacion </a> </li>
+            <li> <a href="#Contacto"> Contacto </a> </li>
+        </ul>
+
+    <div class="contenedor-general-botonMenu">
+      <div class="contenedor-botonMenu">
+        <button class="menu-boton-clase" id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="menu-desplegable">
+          <li> <a href="#Inicio"> Inicio </a> </li>
+          <li> <a href="#Sobre mi"> Sobre mi </a> </li>
+          <li> <a href="#Habilidades"> Habilidades </a> </li>
+          <li> <a href="#Proyectos"> Proyectos </a> </li>
+          <li> <a href="#Educacion"> Educacion </a> </li>
+          <li> <a href="#Contacto"> Contacto </a> </li>
+        </ul>
+      </div>
+    </div>
+
+    </nav>
+</header>
+
+<section class="seccion-principal">
+
+    <canvas id="stars"></canvas>
+    <div class="content"> 
+        <span class="fade-in" style="animation-delay: 0s;">Hola!</span><br>
+        <span class="fade-in" style="animation-delay: 1s;"> Me llamo Adrian </span><br>
+        <span class="fade-in" style="animation-delay: 2s;"> Y soy un desarrollador en proceso.</span>
+    </div>
+
+    <div class="contenedor-redes-seccionPrincipal">
+        
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram clase-logos" style="color:#000000;"></i>
+      </a>
+
+      <a href="https://www.facebook.com/" target="_blank"> 
+        <i class="fab fa-facebook clase-logos" style="color: #000000;"></i>
+      </a>
+
+      <a href="https://www.github.com/" target="_blank">
+        <i class="fab fa-github clase-logos" style="color: #000000;"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/" target="_blank">
+        <i class="fab fa-linkedin clase-logos" style="color: #000000;"></i>
+      </a>
+
+    </div>
+
+    <div class="btn-cv">
+        <a href="cv/CV-Adrian Zaracho.pdf" download>
+          <button>Descargar CV</button>
+        </a>
+    </div>
+
+    <div class="imagen-yo">
+        <img src="imagenes/yo-ofi.jpg" class="imagen-principal-yo" alt="yo xd">
+    </div>
+
+</section>
+
+<section class="sobre-mi-seccion" id="Sobre mi">
+      <div class="caja-sobre-mi">
+        <img src="imagenes/yo-ofi4.jpg" alt="yo again" class="img-sobre-mi">
+
+        <div class="contenedor-textos">
+        <div class="titulo-sobre-mi"> <h2> Sobre mí </h2> </div>
+        <p class="texto-sobre-mi"> <strong>Hola a todos!</strong> <br><br> Antes que nada me presento, me llamo Adrian Zaracho, tengo 20 años y soy un desarrollador web en proceso. Desde el colegio me intereso mucho este tema, de como funcionan las páginas web, los sistemas en general, no solo me apasiona el desarrollo frontend sino tambien el backend, mi objetivo es convertirme en un desarrollador full stack, se que lo voy a conseguir porque mi meta es clara, es un si o si. Asi que nada, espero les haya gustado mi portafolio. Me despido con una frase porque soy amante de las frases jeje: <br><br> "Metele ganas hdp, que el único que no tiene oportunidades es el muerto."</p>
+      </div>
+      </div>
+
+
+</section>
+
+<section class="habilidades-seccion" id="Habilidades">
+  <div class="contenedor-habilidades">
+
+      <h2 class="titulo-habilidades"> Habilidades </h2>
+
+    <div class="container-cuadro-habilidades">
+    <div class="cuadro-habilidades hidden">
+      <img src="habilidades/html.jpg" alt="html-logo" class="img-logos">
+      <h4 class="texto-logos">HTML</h4>
+    </div>
+
+    <div class="cuadro-habilidades hidden">
+      <img src="habilidades/css3.png" alt="css-logo" class="img-logos">
+      <h4 class="texto-logos">CSS3</h4>
+    </div>
+
+    <div class="cuadro-habilidades hidden">
+      <img src="habilidades/js.png" alt="js-logo" class="img-logos">
+      <h4 class="texto-logos">JavaScript</h4>
+    </div>   
+
+    <div class="cuadro-habilidades hidden">
+      <img src="habilidades/mysql.png" alt="mysql-logo" class="img-logos">
+      <h4 class="texto-logos">MySql</h4>
+    </div>
+
+    <div class="cuadro-habilidades hidden">
+      <img src="habilidades/sql-server.png" alt="css-logo" class="img-logos">
+      <h4 class="texto-logos">SQL Server</h4>
+    </div>
+  
+    <div class="cuadro-habilidades hidden">
+      <img src="habilidades/github.svg" alt="git-logo" class="img-logos">
+      <h4 class="texto-logos">GitHub</h4>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="proyectos-seccion" id="Proyectos">
+  <h3 class="titulo-proyectos"> Proyectos </h3><br>
+   
+  <div class="contenedor-proyectos">
+
+    <div class="proyecto">
+      <img src="imagenes/proyecto.jpg" class="img-proyectos" alt="Proyecto-1">
+        <div class="overlay">
+          <h3>CoffeeAzz - HTML y CSS</h3><br>
+          <p> Este proyecto fue el primero, aun le falta cosas por agregar pero me gusta porque no es cargado visualmente, lo hice así porque me gusta las cosas simples, como una buena tasa de cafe.</p><br>
+          <a href=""> Web Cafeteria </a>
+        </div>
+    </div>
+
+    <div class="proyecto">
+      <img src="imagenes/proyecto.jpg" class="img-proyectos" alt="Proyecto-2">
+        <div class="overlay">
+          <h3>Universe - HTML Y CSS</h3><br>
+          <p> Este proyecto que trata sobre el universo lo hice simplemente por mi pasion y curiosidad hacia el cosmos, desde chico me intereso el universo y los misterios que aun guarda, por eso decidi dedicarle una página web.</p><br>
+          <a href=""> Web Universe </a>
+        </div>
+    </div>
+
+    <div class="proyecto">
+      <img src="imagenes/proyecto.jpg" class="img-proyectos" alt="Proyecto-2">
+        <div class="overlay">
+          <h3>EN PROCESO...</h3><br>
+          <p> </p>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="seccion-educacion">
+<div class="contenedor-educacion" id="Educacion">
+    <h3 class="titulo-educacion"> Educación </h3>
+    <div class="contenedor-img-text-direccion">
+
+      <div class="contenedor-img-text">
+        <img src="imagenes/colegio-SanLuis.jpg" alt="colegio" class="img-educacion">
+        <div class="posicion-textos-educacion">
+          <div class="contenedor-textos-educacion">
+            <h3> Bachiller técnico en informática </h3> 
+            <p> Colegio técnico San Luis - 2022</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contenedor-img-text">
+        <img src="imagenes/universidad-americana.jpg" alt="universidad" class="img-educacion">
+        <div class="posicion-textos-educacion">
+          <div class="contenedor-textos-educacion">
+            <h3> Ingeniería en informática </h3> 
+            <p> Universidad Americana - Actualidad </p>
+          </div>
+        </div>
+      </div>     
+
+    </div>
+</div>
+</section>
+
+
+<section class="seccion-contactame" id="Contacto">
+    <div class="contenedor-general-contactame">
+      <div class="contenedor-formulario">
+        <h2 class="titulo-contactame">Contactame!</h2><br><br>
+        <form id="contactoForm">
+
+          <div class="input-nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required class="estilo-borde-nombre-correo">
+          </div>  
+
+          <div class="input-correo">
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo" required class="estilo-borde-nombre-correo">
+          </div>
+
+          <div class="input-mensaje">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" required class="estilo-borde-mensaje"></textarea>
+          </div>
+
+          <div class="direccion-btn">
+            <button type="submit" class="btn-contactame"> Enviar </button>
+          </div>
+        </form>
+        </div>
+    </div>
+</section>
+
+
+<footer class="below">
+    <div class="contenedor-below">
+
+          <div class="contenedor-redes">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram img-redes" style="color:#2f05c4;"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank"> 
+              <i class="fab fa-facebook img-redes" style="color: #2f05c4;"></i>
+            </a>
+
+            <a href="https://www.github.com/" target="_blank">
+              <i class="fab fa-github img-redes" style="color: #2f05c4;"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fab fa-linkedin img-redes" style="color: #2f05c4;"></i>
+            </a>
+          </div>
+
+          <div class="contenedor-contacto">
+            <i class="fas fa-phone" style="color: #0ae3eb;"> <span> +595 982923265</span> </i>
+            <i class="fas fa-envelope" style="color: #0ae3eb;"> <span> adrianzaracho16@gmail.com </span> </i>
+            <i class="fa-solid fa-location-dot" style="color: #0ae3eb;"> <span> Luque, Paraguay.</span></i>
+          </div>
+
+          <p class="parrafo-footer">© 2025 Adrian Zaracho. Todos los derechos reservados.</p>
+        
+    </div>
+</footer>
+
+<script>
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let stars = [];
+
+  function init() {
+    width = canvas.clientWidth;
+    height = canvas.clientHeight;
+    canvas.width = width;
+    canvas.height = height;
+
+    stars = [];
+    for(let i = 0; i < 150; i++) {
+      stars.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 1.2,
+        speed: Math.random() * 0.5 + 0.1
+      });
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = 'white';
+
+    stars.forEach(star => {
+      star.x += star.speed;
+      if(star.x > width) star.x = 0;
+
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('resize', () => {
+    init();
+  });
+
+  init();
+  animate();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        entry.target.classList.remove('hidden');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+
+   // Seccion sobre mi
+  document.querySelectorAll('.titulo-sobre-mi, .texto-sobre-mi, .img-sobre-mi').forEach(el => observer.observe(el));
+
+  // Seccion habilidades
+  document.querySelectorAll('.cuadro-habilidades, .titulo-habilidades').forEach(el => observer.observe(el));
+
+  // Seccion Proyectos
+  document.querySelectorAll('.titulo-proyectos, .contenedor-proyectos').forEach(el => observer.observe(el));
+
+  // Seccion Educacion 
+  document.querySelectorAll('.titulo-educacion, .img-educacion, .contenedor-textos-educacion').forEach(el => observer.observe(el));
+
+// Seccion Contactame
+document.querySelectorAll('.titulo-contactame, .contenedor-general-contactame').forEach(el => observer.observe(el));
+
+
+// SCRIPT PARA EL FORMULARIO
+const formulario = document.getElementById('contactoForm');
+
+formulario.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const nombre = formulario.nombre.value;
+  const correo = formulario.correo.value;
+  const mensaje = formulario.mensaje.value;
+
+  try {
+    const respuesta = await fetch('http://localhost:3000/enviar', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ nombre, correo, mensaje })
+    });
+
+    const data = await respuesta.json();
+
+    if (respuesta.ok) {
+      alert('Mensaje enviado con éxito!');
+      formulario.reset();
+    } else {
+      alert('Error al enviar el mensaje: ' + data.error);
+    }
+  } catch (error) {
+    alert('Error de red: ' + error.message);
+  }
+});
+
+
+</script>
+</body>
+</html>
