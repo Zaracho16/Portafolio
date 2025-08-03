@@ -214,7 +214,7 @@
     <div class="contenedor-general-contactame">
       <div class="contenedor-formulario">
         <h2 class="titulo-contactame">Contactame!</h2><br><br>
-        <form id="contactoForm">
+        <form action="https://formspree.io/f/mnnzbbdo" method="POST" id="contactoForm">
 
           <div class="input-nombre">
             <label for="nombre">Nombre:</label>
@@ -223,7 +223,7 @@
 
           <div class="input-correo">
             <label for="correo">Correo:</label>
-            <input type="email" name="correo" required class="estilo-borde-nombre-correo">
+            <input type="email" name="email" required class="estilo-borde-nombre-correo">
           </div>
 
           <div class="input-mensaje">
@@ -346,35 +346,28 @@
 document.querySelectorAll('.titulo-contactame, .contenedor-general-contactame').forEach(el => observer.observe(el));
 
 
-// SCRIPT PARA EL FORMULARIO
-const formulario = document.getElementById('contactoForm');
-
-formulario.addEventListener('submit', async (e) => {
+  document.querySelector("#contactoForm").addEventListener("submit", async (e) => {
   e.preventDefault();
-
-  const nombre = formulario.nombre.value;
-  const correo = formulario.correo.value;
-  const mensaje = formulario.mensaje.value;
+  const form = e.target;
+  const data = new FormData(form);
 
   try {
-    const respuesta = await fetch('http://localhost:3000/enviar', {
-      method: 'POST',
+    const res = await fetch(form.action, {
+      method: form.method,
+      body: data,
       headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ nombre, correo, mensaje })
+        'Accept': 'application/json'
+      }
     });
 
-    const data = await respuesta.json();
-
-    if (respuesta.ok) {
-      alert('Mensaje enviado con éxito!');
-      formulario.reset();
+    if (res.ok) {
+      alert("📩 Mensaje enviado con éxito!");
+      form.reset();
     } else {
-      alert('Error al enviar el mensaje: ' + data.error);
+      alert("⚠️ Ocurrió un error. Por favor, intentá de nuevo.");
     }
   } catch (error) {
-    alert('Error de red: ' + error.message);
+    alert("⚠️ Error de conexión. Revisa tu red e intentá más tarde.");
   }
 });
 
