@@ -11,8 +11,6 @@ body, html {
   overflow-x: hidden;
 }
 
-/*================== HEADER ==================*/
-
 
 /*================== SECCIÓN PRINCIPAL ==================*/
 .seccion-principal {
@@ -94,6 +92,12 @@ body, html {
   position: relative;
   top: 16rem;
   margin-left: -5px;
+}
+
+@media(max-width:500px) {
+  .btn-cv {
+    margin-top: -35px;
+  }
 }
 
 .btn-cv button {
@@ -188,6 +192,11 @@ body, html {
       }
 }
 
+@media (max-width:600px) {
+  .img-sobre-mi {
+    display: none;
+  }
+}
 
 /*================== SECCIÓN HABILIDADES ==================*/
 .habilidades-seccion {
@@ -260,6 +269,8 @@ body, html {
 .cuadro-habilidades:nth-child(5) { transition-delay: 0.4s; }
 .cuadro-habilidades:nth-child(6) { transition-delay: 0.5s; }
 .cuadro-habilidades:nth-child(7) { transition-delay: 0.6s; }
+.cuadro-habilidades:nth-child(8) { transition-delay: 0.7s; }
+.cuadro-habilidades:nth-child(9) { transition-delay: 0.8s; }
 
 /*================== ANIMACIONES GLOBALES ==================*/
 .hidden {
