@@ -386,11 +386,16 @@ body, html {
     background-color: #1f1f1f;
     padding: 20px;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-img-text-direccion {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .contenedor-img-text {
