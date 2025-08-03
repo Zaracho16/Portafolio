@@ -98,6 +98,11 @@ body, html {
   .btn-cv {
     margin-top: -35px;
   }
+
+  .seccion-principal {
+    height: 85vh;
+  }
+
 }
 
 .btn-cv button {
