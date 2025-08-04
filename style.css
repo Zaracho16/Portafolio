@@ -73,15 +73,6 @@ body, html {
   transform: scale(1.2);
 }
 
-.imagen-principal-yo {
-  border-radius: 400px;
-  position: relative;
-  width: 500px;
-  height: 400px;
-  margin-left: 770px;
-  top: -150px;
-}
-
 @media (max-width:1200px) {
   .imagen-principal-yo {
     display: none;
@@ -331,17 +322,24 @@ body, html {
 
 .proyecto {
   position: relative;
-  overflow: hidden;
   border-radius: 12px;
   border: 4px solid #2f05c4;
-  background-color: #111;
+  background-color: #111; 
+  overflow: hidden;
+}
+
+@media (max-width:800px) {
+  .proyecto {
+    height: 400px;
+  }
 }
 
 .proyecto img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   transition: transform 0.5s ease;
+  object-fit: cover;
 }
 
 .proyecto:hover img {
@@ -362,8 +360,27 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay p {
+  font-size: 1.01rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.3rem 0;
+  margin-top: 1rem;
+}
+
+.overlay span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.3rem 0;
 }
 
 .proyecto:hover .overlay {
@@ -371,7 +388,6 @@ body, html {
 }
 
 .overlay h3,
-.overlay p,
 .overlay a {
   margin: 0.3rem 0;
   color: white;
