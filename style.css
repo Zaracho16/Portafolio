@@ -127,7 +127,9 @@ body, html {
 
 .caja-sobre-mi {
   display: flex;
-  padding: 30px;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 24px;
   border-left: 3px solid #2f05c4;
   box-shadow: 0 0 15px #2f05c4;
   border-radius: 25px;
@@ -139,9 +141,12 @@ body, html {
 }
 
 .img-sobre-mi {
-  width: 40vw;
-  height: 70vh;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
   border-radius: 50px;
+  object-fit: cover;
+
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease;
@@ -182,14 +187,11 @@ body, html {
   filter: grayscale(100%);
 }
 
-@media (max-width: 1024px) {
-      .caja-sobre-mi {
-        display: flex;
-        flex-direction: column;
-      }
-      .img-sobre-mi {
-        width: 100%;
-      }
+@media (max-width: 768px) {
+  .caja-sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width:600px) {
@@ -317,6 +319,7 @@ body, html {
   opacity: 0;
   transform: translateY(-100px);
   transition: all 2s ease;
+  margin-top: -25px;
 }
 
 .contenedor-proyectos.show {
@@ -426,6 +429,7 @@ body, html {
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin-top: 15px;
 }
 
 .contenedor-img-text {
@@ -434,6 +438,7 @@ body, html {
     box-shadow: 0 0 15px rgb(47, 5, 196);
     border-radius: 60px;
     background-color: #1f1f1f;
+    padding: 30px;
 }
 
 .img-educacion {
