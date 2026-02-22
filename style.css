@@ -85,17 +85,6 @@ body, html {
   margin-left: -5px;
 }
 
-@media(max-width:500px) {
-  .btn-cv {
-    margin-top: -35px;
-  }
-
-  .seccion-principal {
-    height: 76vh;
-  }
-
-}
-
 .btn-cv button {
   background-color: #4a13e0;
   color: white;
@@ -111,6 +100,21 @@ body, html {
 
 .btn-cv button:hover {
   transform: scale(1.1);
+}
+
+@media(max-width:500px) {
+  .btn-cv {
+    margin-top: -35px;
+  }
+
+  .btn-cv button {
+    padding: 10px;
+  }
+
+  .seccion-principal {
+    height: 76vh;
+  }
+
 }
 
 /*================== SECCIÓN SOBRE MÍ ==================*/
