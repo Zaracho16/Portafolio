@@ -108,11 +108,14 @@ body, html {
   }
 
   .btn-cv button {
-    padding: 10px;
+    padding: 8px;
+    height: 3.8rem;
+    display: flex;
+    justify-content: center;
   }
 
   .seccion-principal {
-    height: 76vh;
+    height: 90vh;
   }
 
 }
