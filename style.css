@@ -284,6 +284,7 @@ body, html {
 .cuadro-habilidades:nth-child(8) { transition-delay: 0.7s; }
 .cuadro-habilidades:nth-child(9) { transition-delay: 0.8s; }
 .cuadro-habilidades:nth-child(10) { transition-delay: 0.9s; }
+.cuadro-habilidades:nth-child(11) { transition-delay: 1s; }
 
 /*================== ANIMACIONES GLOBALES ==================*/
 .hidden {
