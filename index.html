@@ -174,32 +174,33 @@
 
     <div class="proyecto">
       <img src="https://noirperfumeria.co/cdn/shop/files/Banner_envio_gratis_copia_feaf69bb-ed73-4ac6-ae28-cbf3cf36f485.webp?v=1727298519&width=3840" class="img-proyectos" alt="Tienda 404">
-        <div class="overlay">
+      <div class="overlay">
+
           <h3>Tienda 404 - Perfumería</h3>
-          <p>Proyecto personal inspirado en mi gusto por los perfumes. Lo desarrollé como un hobby y también como una forma de practicar y mejorar mis habilidades en desarrollo. <br><br>
-          Aún me quedan implementaciones pendientes :)<br><br>
-          <span> <strong> Tecnologias usadas: </strong></span> <br><br>
-          <span> Front: HTML, CSS, Tailwind y JavaScript</span> <br>
-          <span> Back: Node.js y Express.js </span> <br><br>
-          <a href="https://zaracho16.github.io/404/" target="_blank">Web 404</a>
-          </p><br><br>
-        </div>
-    </div>
 
-    <div class="proyecto">
-      <img src="imagenes/proyecto.jpg" class="img-proyectos" alt="Proyecto-2">
-        <div class="overlay">
-          <h3>EN PROCESO...</h3><br>
-          <p></p><br>
-        </div>
-    </div>
+          <p>
+              Proyecto personal inspirado en mi gusto por los perfumes.
+              Lo desarrollé como un hobby y también como una forma de
+              practicar y mejorar mis habilidades en desarrollo.
+          </p>
 
-    <div class="proyecto">
-      <img src="imagenes/proyecto.jpg" class="img-proyectos" alt="Proyecto-2">
-        <div class="overlay">
-          <h3>EN PROCESO...</h3><br>
-          <p> </p>
-        </div>
+          <p>
+              Aún me quedan implementaciones pendientes :)
+          </p>
+
+          <p>
+              <strong>Tecnologías usadas:</strong>
+          </p>
+
+          <span>Front: HTML, CSS, Tailwind y JavaScript</span>
+
+          <span>Back: Node.js y Express.js</span>
+
+          <a href="https://zaracho16.github.io/404/" target="_blank">
+              Web 404
+          </a>
+
+      </div>
     </div>
 
   </div>
@@ -298,106 +299,10 @@
     </div>
 </footer>
 
-<script>
-  const canvas = document.getElementById('stars');
-  const ctx = canvas.getContext('2d');
-  let width, height;
-  let stars = [];
-
-  function init() {
-    width = canvas.clientWidth;
-    height = canvas.clientHeight;
-    canvas.width = width;
-    canvas.height = height;
-
-    stars = [];
-    for(let i = 0; i < 150; i++) {
-      stars.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        radius: Math.random() * 1.2,
-        speed: Math.random() * 0.5 + 0.1
-      });
-    }
-  }
-
-  function animate() {
-    ctx.clearRect(0, 0, width, height);
-    ctx.fillStyle = 'white';
-
-    stars.forEach(star => {
-      star.x += star.speed;
-      if(star.x > width) star.x = 0;
-
-      ctx.beginPath();
-      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-      ctx.fill();
-    });
-
-    requestAnimationFrame(animate);
-  }
-
-  window.addEventListener('resize', () => {
-    init();
-  });
-
-  init();
-  animate();
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        entry.target.classList.remove('hidden');
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
 
 
-   // Seccion sobre mi
-  document.querySelectorAll('.titulo-sobre-mi, .texto-sobre-mi, .img-sobre-mi').forEach(el => observer.observe(el));
 
-  // Seccion habilidades
-  document.querySelectorAll('.cuadro-habilidades, .titulo-habilidades').forEach(el => observer.observe(el));
+<script src="script.js"></script>
 
-  // Seccion Proyectos
-  document.querySelectorAll('.titulo-proyectos, .contenedor-proyectos').forEach(el => observer.observe(el));
-
-  // Seccion Educacion 
-  document.querySelectorAll('.titulo-educacion, .img-educacion, .contenedor-textos-educacion').forEach(el => observer.observe(el));
-
-  // Seccion Contactame
-  document.querySelectorAll('.titulo-contactame, .contenedor-general-contactame').forEach(el => observer.observe(el));
-
-
-  document.querySelector("#contactoForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const data = new FormData(form);
-
-  try {
-    const res = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (res.ok) {
-      alert("Mensaje enviado con éxito!");
-      form.reset();
-    } else {
-      alert("Ocurrió un error. Por favor, intentá de nuevo.");
-    }
-  } catch (error) {
-    alert("Error de conexión. Revisa tu red e intentá más tarde.");
-  }
-});
-
-
-</script>
 </body>
 </html>
