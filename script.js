@@ -62,6 +62,9 @@
     // Seccion habilidades
     document.querySelectorAll('.cuadro-habilidades, .titulo-habilidades').forEach(el => observer.observe(el));
 
+    // Seccion certificados
+    document.querySelectorAll('.titulo-certificados, .container-certificado-general').forEach(el => observer.observe(el));
+
     // Seccion Proyectos
     document.querySelectorAll('.titulo-proyectos, .contenedor-proyectos').forEach(el => observer.observe(el));
 
