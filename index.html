@@ -1,388 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-        
-    <title>aZaracho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Adrian Zaracho, estudiante de Ingeniería en Informática interesado en el desarrollo de software y backend.">
+  <meta name="theme-color" content="#000000">
+  <title>Adrian Zaracho | Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<header>
-    <nav>
-        <ul class="menu-principal">
-            <li> <a href="#Sobre mi"> Sobre mi </a> </li>
-            <li> <a href="#Habilidades"> Habilidades </a> </li>
-            <li> <a href="#Certificados"> Certificados </a> </li>
-            <li> <a href="#Proyectos"> Proyectos </a> </li>
-            <li> <a href="#Educacion"> Educacion </a> </li>
-            <li> <a href="#Contacto"> Contacto </a> </li>
-        </ul>
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">AZ</a>
 
-    <div class="contenedor-general-botonMenu">
-      <div class="contenedor-botonMenu">
-        <button class="menu-boton-clase" id="menu-btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <ul class="menu-principal" id="menu-principal">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
 
-        <ul class="menu-desplegable">
-          <li> <a href="#Sobre mi"> Sobre mi </a> </li>
-          <li> <a href="#Habilidades"> Habilidades </a> </li>
-          <li> <a href="#Certificados"> Certificados </a> </li>
-          <li> <a href="#Proyectos"> Proyectos </a> </li>
-          <li> <a href="#Educacion"> Educacion </a> </li>
-          <li> <a href="#Contacto"> Contacto </a> </li>
-        </ul>
-      </div>
-    </div>
-
+      <button class="menu-boton-clase" id="menu-btn" type="button"
+        aria-label="Abrir menú de navegación" aria-controls="menu-principal" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
     </nav>
-</header>
+  </header>
 
-
-<section class="seccion-principal">
-
-    <canvas id="stars"></canvas>
-
-    <div class="contenido-principal">
-
+  <main>
+    <section class="seccion-principal" id="inicio" aria-labelledby="titulo-principal">
+      <canvas id="stars" aria-hidden="true"></canvas>
+      <div class="contenido-principal">
+        <p class="eyebrow fade-in">PORTAFOLIO PERSONAL</p>
         <div class="content">
-            <span class="fade-in" style="animation-delay: 0s;">
-                ¡Hola!
-            </span>
-
-            <span class="fade-in" style="animation-delay: 0.7s;">
-                Me llamo Adrian.
-            </span>
-
-            <span class="fade-in" style="animation-delay: 1.4s;">
-                Y bienvenidos a mi portafolio.
-            </span>
+          <h1 id="titulo-principal" class="fade-in">Hola, soy <span>Adrian Zaracho.</span></h1>
+          <p class="hero-descripcion fade-in">Estudiante de Ingeniería en Informática.</p>
         </div>
 
-        <div class="contenedor-redes-seccionPrincipal">
-
-            <a href="https://www.instagram.com/_adrianzaracho16/"
-               target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram clase-logos"></i>
-            </a>
-
-            <a href="https://www.facebook.com/adrian.zaracho.98"
-               target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook clase-logos"></i>
-            </a>
-
-            <a href="https://github.com/Zaracho16"
-               target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github clase-logos"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/adrian-zaracho16/"
-               target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin clase-logos"></i>
-            </a>
-
-        </div>
-
-        <div class="btn-cv">
-            <a href="cv/CV - Adrian Zaracho.pdf" download>
-                <button type="button">Descargar CV</button>
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="sobre-mi-seccion" id="Sobre mi">
-      <div class="caja-sobre-mi">
-        <img src="assets/imagenes/perfil/yo.jpg" alt="yo again" class="img-sobre-mi">
-
-        <div class="contenedor-textos">
-          <div class="titulo-sobre-mi"> <h2> Sobre mí </h2> </div>
-            <p class="texto-sobre-mi">
-              Soy Adrian Zaracho, tengo 21 años y estudio Ingeniería en Informática.
-              Me gusta todo lo que tenga que ver con el desarrollo y la tecnología.<br><br>
-              Decidí estudiar Informática porque es un campo muy amplio y dinámico, donde siempre hay algo nuevo por aprender. Además, me gusta rodearme de personas con experiencia y conocimientos en tecnología, ya que considero que compartir ideas y aprender de otros es una de las mejores formas de crecer profesionalmente.<br>
-              Y sí, también soy fan del café.<br><br>
-              Y como me gustan las frases, dejo esta que me representa: <br><br>
-              <em>"Trabaja porque tienes más que mostrar."</em>
-            </p>
-        </div>
-      </div>
-</section>
-
-<section class="habilidades-seccion" id="Habilidades">
-  <div class="contenedor-habilidades">
-
-    <h2 class="titulo-habilidades"> Habilidades </h2>
-
-    <div class="container-cuadro-habilidades">
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/html.jpg" alt="html-logo" class="img-logos">
-        <h4 class="texto-logos">HTML5</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/css3.png" alt="css-logo" class="img-logos">
-        <h4 class="texto-logos">CSS3</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/tailwind.svg" alt="git-logo" class="img-logos">
-        <h4 class="texto-logos">Tailwind</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/js.png" alt="js-logo" class="img-logos">
-        <h4 class="texto-logos">JavaScript</h4>
-      </div>   
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/mysql.png" alt="mysql-logo" class="img-logos">
-        <h4 class="texto-logos">MySql</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/mariadb-icon.svg" alt="MariaDB-logo" class="img-logos">
-        <h4 class="texto-logos">MariaDB</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/postgresql.png" alt="postgresql-logo" class="img-logos">
-        <h4 class="texto-logos">PostgreSQL</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/mongodb.png" alt="mongodb-logo" class="img-logos">
-        <h4 class="texto-logos">MongoDB</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/node.png" alt="node.js-logo" class="img-logos">
-        <h4 class="texto-logos">Node.js</h4>
-      </div>
-  
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/github.svg" alt="github-logo" class="img-logos">
-        <h4 class="texto-logos">GitHub</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/git.png" alt="git-logo" class="img-logos">
-        <h4 class="texto-logos">Git</h4>
-      </div>
-
-      <div class="cuadro-habilidades hidden">
-        <img src="assets/imagenes/habilidades/postman.png" alt="postman-logo" class="img-logos">
-        <h4 class="texto-logos">Postman</h4>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="certificados-seccion" id="Certificados">
-
-  <h1 class="titulo-certificados"> Certificados </h1>
-
-  <div class="container-certificado-general">
-
-    <!--Certificado 1-->
-    <div class="contenedor-por-certificado">
-
-      <div class="contenedor-certificado-izquierdo">
-        <img src="assets/imagenes/certificados/midudev_logo.jpeg" alt="logo de midudev">
-      </div>
-
-      <div class="contenedor-certificado-derecho">
-        <h2>Aprende SQL - Curso completo</h2>
-        <h3>midudev</h3>
-        <p class="estado-certificado-comp">Completado</p>
-        <p>Fundamentos de SQL, consultas a bases de datos, manipulación de información y relaciones entre tablas.</p>
-        <a href="https://certificados.midudev.com/5a958df8-2804-4167-9157-835eb38d6d40.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a>
-      </div>
-
-    </div>
-
-    <!--Certificado 2-->
-    <div class="contenedor-por-certificado">
-
-      <div class="contenedor-certificado-izquierdo">
-        <img src="assets/imagenes/certificados/hackerrank_logo.jpeg" alt="logo de hackerrank">
-      </div>
-
-      <div class="contenedor-certificado-derecho">
-        <h2>HackerRank - SQL (Basic)</h2>
-        <h3>HackeRank</h3>
-        <p class="estado-certificado-comp">Completado</p>
-        <p>Evaluación práctica de SQL mediante resolución de problemas de consultas, filtrado de datos, agrupaciones y funciones de agregación.</p>
-        <a href="https://www.hackerrank.com/certificates/iframe/07c6bc07691f" target="_blank" rel="noopener noreferrer">Ver certificado</a>
-      </div>
-
-    </div>
-
-    <!--Certificado 3-->
-    <div class="contenedor-por-certificado">
-
-      <div class="contenedor-certificado-izquierdo">
-        <img src="assets/imagenes/certificados/cisco-redes-curso.jpeg" alt="logo de cisco redes">
-      </div>
-
-      <div class="contenedor-certificado-derecho">
-        <h2>Networking Basics</h2>
-        <h3>Cisco Networking Academy</h3>
-        <p class="estado-certificado-enprog">En progreso</p>
-        <p>Fundamentos de redes informáticas, modelos de comunicación, protocolos, dispositivos de red y conectividad.</p>
-        <a>Disponible al finalizar el curso</a>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="proyectos-seccion" id="Proyectos">
-  <h3 class="titulo-proyectos"> Proyectos </h3><br>
-
-  <div class="contenedor-proyectos">
-
-    <div class="proyecto">
-      <img src="https://noirperfumeria.co/cdn/shop/files/Banner_envio_gratis_copia_feaf69bb-ed73-4ac6-ae28-cbf3cf36f485.webp?v=1727298519&width=3840" class="img-proyectos" alt="Tienda 404">
-      <div class="overlay">
-
-          <h3>Tienda 404 - Perfumería</h3>
-
-          <p>
-              Proyecto personal inspirado en mi gusto por los perfumes.
-              Lo desarrollé como un hobby y también como una forma de
-              practicar y mejorar mis habilidades en desarrollo.
-          </p>
-
-          <p>
-              Aún me quedan implementaciones pendientes :)
-          </p>
-
-          <p>
-              <strong>Tecnologías usadas:</strong>
-          </p>
-
-          <span>Front: HTML, CSS, Tailwind y JavaScript</span>
-
-          <span>Back: Node.js y Express.js</span>
-
-          <a href="https://zaracho16.github.io/404/" target="_blank">
-              Web 404
+        <div class="hero-acciones">
+          <div class="contenedor-redes-seccionPrincipal" aria-label="Redes sociales">
+            <a href="https://www.instagram.com/_adrianzaracho16/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram clase-logos" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/adrian.zaracho.98" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook clase-logos" aria-hidden="true"></i></a>
+            <a href="https://github.com/Zaracho16" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github clase-logos" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/adrian-zaracho16/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin clase-logos" aria-hidden="true"></i></a>
+          </div>
+          <a class="btn-cv" href="cv/CV - Adrian Zaracho.pdf" download>
+            Descargar CV <i class="fa-solid fa-download" aria-hidden="true"></i>
           </a>
-
+        </div>
+        <a class="hero-scroll" href="#sobre-mi">Conocé más <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-
-<section class="seccion-educacion">
-<div class="contenedor-educacion" id="Educacion">
-    <h3 class="titulo-educacion"> Educación </h3>
-    <div class="contenedor-img-text-direccion">
-
-      <div class="contenedor-img-text">
-        <img src="assets/imagenes/formacion/colegio -sanLuis.png" alt="colegio" class="img-educacion">
-        <div class="posicion-textos-educacion">
-          <div class="contenedor-textos-educacion">
-            <h3> Bachiller técnico en informática </h3> 
-            <p> Colegio técnico San Luis - 2022</p>
+    <section class="sobre-mi-seccion section-shell" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="caja-sobre-mi">
+        <img src="assets/imagenes/perfil/yo.jpg" alt="Adrian Zaracho" class="img-sobre-mi reveal">
+        <div class="contenedor-textos">
+          <div class="titulo-sobre-mi reveal"><h2 id="titulo-sobre-mi">Sobre mí</h2></div>
+          <div class="texto-sobre-mi reveal">
+            <p>Soy Adrian Zaracho, estudiante de Ingeniería en Informática. Me interesa el desarrollo de software, especialmente la lógica detrás de las aplicaciones, el trabajo con bases de datos y la construcción de soluciones útiles.</p>
+            <p>He trabajado en proyectos académicos y personales utilizando tecnologías como Java, SQL, JavaScript y Node.js. Disfruto aprender, resolver problemas y mejorar cada día.</p>
+            <p>Y sí, también soy fan del café.</p>
+            <blockquote>“Trabaja porque tienes más que mostrar.”</blockquote>
           </div>
         </div>
       </div>
-      
-      <div class="contenedor-img-text">
-        <img src="assets/imagenes/formacion/universidad-americana.jpg" alt="universidad" class="img-educacion">
-        <div class="posicion-textos-educacion">
-          <div class="contenedor-textos-educacion">
-            <h3> Ingeniería en informática </h3> 
-            <p> Universidad Americana - Actualidad </p>
+    </section>
+
+    <section class="habilidades-seccion section-shell" id="habilidades" aria-labelledby="titulo-habilidades">
+      <div class="contenedor-habilidades">
+        <h2 class="titulo-habilidades reveal" id="titulo-habilidades">Habilidades</h2>
+        <p class="section-intro">Tecnologías y herramientas con las que he trabajado en proyectos y prácticas.</p>
+
+        <div class="grupo-habilidades">
+          <h3>Desarrollo web</h3>
+          <div class="container-cuadro-habilidades">
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/html.jpg" alt="" class="img-logos"> <h4 class="texto-logos"> HTML5 </h4> 
+            </div>
+
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/css3.png" alt="" class="img-logos"> <h4 class="texto-logos"> CSS3 </h4> 
+            </div>
+
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/tailwind.svg" alt="" class="img-logos"> <h4 class="texto-logos">Tailwind CSS</h4>
+            </div>
+
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/js.png" alt="" class="img-logos"> <h4 class="texto-logos"> JavaScript </h4> 
+            </div>
+
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/node.png" alt="" class="img-logos"> <h4 class="texto-logos"> Node.js </h4> 
+            </div>
           </div>
         </div>
-      </div>     
 
-    </div>
-</div>
-</section>
+        <div class="grupo-habilidades">
+          <h3>Bases de datos</h3>
+          <div class="container-cuadro-habilidades">
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/mysql.png" alt="" class="img-logos"> <h4 class="texto-logos"> MySQL </h4> 
+            </div>
+            
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/mariadb-icon.svg" alt="" class="img-logos"> <h4 class="texto-logos"> MariaDB </h4> 
+            </div>
 
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/postgresql.png" alt="" class="img-logos"> <h4 class="texto-logos">PostgreSQL</h4>
+            </div>
 
-<section class="seccion-contactame" id="Contacto">
-    <div class="contenedor-general-contactame">
-      <div class="contenedor-formulario">
-        <h2 class="titulo-contactame">Contactame!</h2><br><br>
-        <form action="https://formspree.io/f/mnnzbbdo" method="POST" id="contactoForm">
-
-          <div class="input-nombre">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" required class="estilo-borde-nombre-correo">
-          </div>  
-
-          <div class="input-correo">
-            <label for="correo">Correo:</label>
-            <input type="email" name="email" required class="estilo-borde-nombre-correo">
-            <small style="color: gray; font-size: 0.85rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Esto me ayudará a responder a su consulta por correo electrónico.</small>
+            <div class="cuadro-habilidades hidden"> 
+              <img src="assets/imagenes/habilidades/mongodb.png" alt="" class="img-logos"> <h4 class="texto-logos"> MongoDB </h4> 
+            </div>
           </div>
-
-          <div class="input-mensaje">
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" required class="estilo-borde-mensaje"></textarea>
-          </div>
-
-          <div class="direccion-btn">
-            <button type="submit" class="btn-contactame"> Enviar </button>
-          </div>
-        </form>
         </div>
-    </div>
-</section>
+
+        <div class="grupo-habilidades">
+          <h3>Herramientas</h3>
+          <div class="container-cuadro-habilidades">
+            <div class="cuadro-habilidades hidden"><img src="assets/imagenes/habilidades/github.svg" alt="" class="img-logos"><h4 class="texto-logos">GitHub</h4></div>
+            <div class="cuadro-habilidades hidden"><img src="assets/imagenes/habilidades/git.png" alt="" class="img-logos"><h4 class="texto-logos">Git</h4></div>
+            <div class="cuadro-habilidades hidden"><img src="assets/imagenes/habilidades/postman.png" alt="" class="img-logos"><h4 class="texto-logos">Postman</h4></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificados-seccion section-shell" id="certificados" aria-labelledby="titulo-certificados">
+      <h2 class="titulo-certificados reveal" id="titulo-certificados">Certificados</h2>
+      <div class="container-certificado-general reveal">
+        <article class="contenedor-por-certificado">
+          <div class="contenedor-certificado-izquierdo"><img src="assets/imagenes/certificados/midudev_logo.jpeg" alt="Logo de midudev"></div>
+          <div class="contenedor-certificado-derecho">
+            <h3>Aprende SQL - Curso completo</h3><p class="certificado-emisor">midudev</p>
+            <p class="estado-certificado-comp">Completado</p>
+            <p>Fundamentos de SQL, consultas a bases de datos, manipulación de información y relaciones entre tablas.</p>
+            <a href="https://certificados.midudev.com/5a958df8-2804-4167-9157-835eb38d6d40.pdf" target="_blank" rel="noopener noreferrer">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="contenedor-por-certificado">
+          <div class="contenedor-certificado-izquierdo"><img src="assets/imagenes/certificados/hackerrank_logo.jpeg" alt="Logo de HackerRank"></div>
+          <div class="contenedor-certificado-derecho">
+            <h3>SQL (Basic)</h3><p class="certificado-emisor">HackerRank</p>
+            <p class="estado-certificado-comp">Completado</p>
+            <p>Evaluación práctica de SQL mediante consultas, filtrado de datos, agrupaciones y funciones de agregación.</p>
+            <a href="https://www.hackerrank.com/certificates/iframe/07c6bc07691f" target="_blank" rel="noopener noreferrer">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="contenedor-por-certificado">
+          <div class="contenedor-certificado-izquierdo"><img src="assets/imagenes/certificados/cisco-redes-curso.jpeg" alt="Logo de Cisco Networking Academy"></div>
+          <div class="contenedor-certificado-derecho">
+            <h3>Networking Basics</h3><p class="certificado-emisor">Cisco Networking Academy</p>
+            <p class="estado-certificado-enprog">En progreso</p>
+            <p>Fundamentos de redes informáticas, modelos de comunicación, protocolos, dispositivos de red y conectividad.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
 
-<footer class="below">
+    <section class="proyectos-seccion section-shell" id="proyectos" aria-labelledby="titulo-proyectos">
+
+      <h2 class="titulo-proyectos reveal" id="titulo-proyectos">
+        Proyectos
+      </h2>
+
+      <p class="section-intro"></p>
+
+      <div class="contenedor-proyectos reveal">
+
+        <!-- TIENDA 404 -->
+        <article class="proyecto">
+
+          <div class="project-visual">
+            <img
+              src="assets/imagenes/proyectos/404.png"
+              alt="Captura de la página principal de Tienda 404"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="overlay">
+            <h3>Tienda 404 - Perfumería</h3>
+
+            <p>
+              Proyecto personal inspirado en mi interés por los perfumes.
+              Lo desarrollé para practicar la creación de una experiencia web
+              y seguir mejorando mis habilidades.
+            </p>
+
+            <p>
+              <strong>Tecnologías:</strong>
+              HTML, CSS, Tailwind CSS, JavaScript, Node.js y Express.js.
+            </p>
+
+            <div class="project-links">
+              <a href="https://zaracho16.github.io/404/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Ver sitio
+                <i class="fa-solid fa-arrow-up-right-from-square"
+                  aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="seccion-educacion section-shell" id="educacion" aria-labelledby="titulo-educacion">
+      <div class="contenedor-educacion">
+        <h2 class="titulo-educacion reveal" id="titulo-educacion">Educación</h2>
+        <div class="contenedor-img-text-direccion">
+          <article class="contenedor-img-text">
+            <img src="assets/imagenes/formacion/colegio -sanLuis.png" alt="Institución educativa Colegio Técnico San Luis" class="img-educacion reveal">
+            <div class="posicion-textos-educacion"><div class="contenedor-textos-educacion reveal"><h3>Bachiller técnico en informática</h3><p>Colegio Técnico San Luis · 2022</p></div></div>
+          </article>
+          <article class="contenedor-img-text">
+            <img src="assets/imagenes/formacion/universidad-americana.jpg" alt="Universidad Americana" class="img-educacion reveal">
+            <div class="posicion-textos-educacion"><div class="contenedor-textos-educacion reveal"><h3>Ingeniería en Informática</h3><p>Universidad Americana · En curso</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-contactame section-shell" id="contacto" aria-labelledby="titulo-contactame">
+      <div class="contenedor-general-contactame reveal">
+        <div class="contenedor-formulario">
+          <h2 class="titulo-contactame" id="titulo-contactame">Hablemos</h2>
+          <p class="contacto-intro">¿Tenés una consulta o una oportunidad? Escribime.</p>
+          <form action="https://formspree.io/f/mnnzbbdo" method="POST" id="contactoForm">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="email" autocomplete="email" required>
+              <small>Usaré tu correo para responder a tu consulta.</small>
+            </div>
+            <div class="form-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <div class="direccion-btn"><button type="submit" class="btn-contactame">Enviar mensaje <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button></div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="below">
     <div class="contenedor-below">
-
-          <div class="contenedor-redes">
-            <a href="https://www.instagram.com/_adrianzaracho16/" target="_blank">
-              <i class="fab fa-instagram img-redes" style="color:#2f05c4;"></i>
-            </a>
-
-            <a href="https://www.facebook.com/adrian.zaracho.98" target="_blank"> 
-              <i class="fab fa-facebook img-redes" style="color: #2f05c4;"></i>
-            </a>
-
-            <a href="https://github.com/Zaracho16" target="_blank">
-              <i class="fab fa-github img-redes" style="color: #2f05c4;"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/adrian-zaracho16/" target="_blank">
-              <i class="fab fa-linkedin img-redes" style="color: #2f05c4;"></i>
-            </a>
-          </div>
-
-          <div class="contenedor-contacto">
-            <i class="fas fa-phone" style="color: #0ae3eb;"> <span> +595 982923265</span> </i>
-            <i class="fas fa-envelope" style="color: #0ae3eb;"> <span> adrianzaracho16@gmail.com </span> </i>
-            <i class="fa-solid fa-location-dot" style="color: #0ae3eb;"> <span> Asunción, Paraguay.</span></i>
-          </div>
-
-          <p class="parrafo-footer">© 2026 Adrian Zaracho. Todos los derechos reservados.</p>
-        
+      <div class="contenedor-redes" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/_adrianzaracho16/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram img-redes" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/adrian.zaracho.98" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook img-redes" aria-hidden="true"></i></a>
+        <a href="https://github.com/Zaracho16" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github img-redes" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/adrian-zaracho16/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin img-redes" aria-hidden="true"></i></a>
+      </div>
+      <div class="contenedor-contacto">
+        <a href="tel:+595982923265"><i class="fas fa-phone" aria-hidden="true"></i><span>+595 982 923 265</span></a>
+        <a href="mailto:adrianzaracho16@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span>adrianzaracho16@gmail.com</span></a>
+        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Asunción, Paraguay</span>
+      </div>
+      <a class="volver-inicio" href="#inicio">Volver al inicio ↑</a>
+      <p class="parrafo-footer">© 2026 Adrian Zaracho. Todos los derechos reservados.</p>
     </div>
-</footer>
+  </footer>
 
-
-<script src="script.js"></script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
